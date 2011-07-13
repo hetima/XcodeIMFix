@@ -1,0 +1,25 @@
+XcodeIMFix 1.0
+
+-説明
+Xcode4専用です。4.0.2で動作確認しています。
+completion表示中に日本語入力を行うと発生する不具合を回避します。
+特にキャレットの左右に文字がない状態で入力するとクラッシュするのを防止します。
+それ以外にもUndoスタックが初期化される問題を解消します。
+
+completion表示中の日本語入力の更新を無視します。入力自体は生きているので変換確定すると入力されます。
+
+通常時日本語入力の1文字目が正常に表示されない問題には対応していません。
+
+
+-インストール
+~/Library/Application Support/Developer/Shared/Xcode/Plug-ins
+に XcodeIMFix.xcplugin を入れてください。
+
+
+-ソースコード
+https://github.com/hetima/XcodeIMFix
+
+
+-作者
+http://hetima.com
+http://twitter.com/hetima
