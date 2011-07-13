@@ -9,17 +9,20 @@
 /* Begin PBXBuildFile section */
 		AAF139CD13CD7A490081A375 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAF139CC13CD7A490081A375 /* Cocoa.framework */; };
 		AAF139D713CD7A490081A375 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAF139D513CD7A490081A375 /* InfoPlist.strings */; };
+		AAF139E013CD7B350081A375 /* HTXcodeIMFix.m in Sources */ = {isa = PBXBuildFile; fileRef = AAF139DF13CD7B350081A375 /* HTXcodeIMFix.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AAF139C913CD7A490081A375 /* XcodeIMFix.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcodeIMFix.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAF139C913CD7A490081A375 /* XcodeIMFix.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcodeIMFix.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAF139CC13CD7A490081A375 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		AAF139CF13CD7A490081A375 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		AAF139D013CD7A490081A375 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		AAF139D113CD7A490081A375 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		AAF139D413CD7A490081A375 /* XcodeIMFix-Info.plist */ = {isa = PBXFileReference; path = "XcodeIMFix-Info.plist"; sourceTree = "<group>"; };
+		AAF139D413CD7A490081A375 /* XcodeIMFix-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XcodeIMFix-Info.plist"; sourceTree = "<group>"; };
 		AAF139D613CD7A490081A375 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AAF139D813CD7A490081A375 /* XcodeIMFix-Prefix.pch */ = {isa = PBXFileReference; path = "XcodeIMFix-Prefix.pch"; sourceTree = "<group>"; };
+		AAF139D813CD7A490081A375 /* XcodeIMFix-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XcodeIMFix-Prefix.pch"; sourceTree = "<group>"; };
+		AAF139DE13CD7B350081A375 /* HTXcodeIMFix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTXcodeIMFix.h; sourceTree = "<group>"; };
+		AAF139DF13CD7B350081A375 /* HTXcodeIMFix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTXcodeIMFix.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +49,7 @@
 		AAF139CA13CD7A490081A375 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AAF139C913CD7A490081A375 /* XcodeIMFix.bundle */,
+				AAF139C913CD7A490081A375 /* XcodeIMFix.xcplugin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				AAF139D313CD7A490081A375 /* Supporting Files */,
+				AAF139DE13CD7B350081A375 /* HTXcodeIMFix.h */,
+				AAF139DF13CD7B350081A375 /* HTXcodeIMFix.m */,
 			);
 			path = XcodeIMFix;
 			sourceTree = "<group>";
@@ -105,7 +110,7 @@
 			);
 			name = XcodeIMFix;
 			productName = XcodeIMFix;
-			productReference = AAF139C913CD7A490081A375 /* XcodeIMFix.bundle */;
+			productReference = AAF139C913CD7A490081A375 /* XcodeIMFix.xcplugin */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -146,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAF139E013CD7B350081A375 /* HTXcodeIMFix.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +174,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = supported;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
@@ -186,6 +193,7 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = supported;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -204,10 +212,11 @@
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XcodeIMFix/XcodeIMFix-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				INFOPLIST_FILE = "XcodeIMFix/XcodeIMFix-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = bundle;
+				WRAPPER_EXTENSION = xcplugin;
 			};
 			name = Debug;
 		};
@@ -220,10 +229,11 @@
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "XcodeIMFix/XcodeIMFix-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
 				INFOPLIST_FILE = "XcodeIMFix/XcodeIMFix-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = bundle;
+				WRAPPER_EXTENSION = xcplugin;
 			};
 			name = Release;
 		};
@@ -246,6 +256,7 @@
 				AAF139DD13CD7A490081A375 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
