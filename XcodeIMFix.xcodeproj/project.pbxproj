@@ -1,0 +1,253 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AAF139CD13CD7A490081A375 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAF139CC13CD7A490081A375 /* Cocoa.framework */; };
+		AAF139D713CD7A490081A375 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AAF139D513CD7A490081A375 /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AAF139C913CD7A490081A375 /* XcodeIMFix.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcodeIMFix.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAF139CC13CD7A490081A375 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		AAF139CF13CD7A490081A375 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		AAF139D013CD7A490081A375 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		AAF139D113CD7A490081A375 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AAF139D413CD7A490081A375 /* XcodeIMFix-Info.plist */ = {isa = PBXFileReference; path = "XcodeIMFix-Info.plist"; sourceTree = "<group>"; };
+		AAF139D613CD7A490081A375 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AAF139D813CD7A490081A375 /* XcodeIMFix-Prefix.pch */ = {isa = PBXFileReference; path = "XcodeIMFix-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AAF139C613CD7A490081A375 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAF139CD13CD7A490081A375 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AAF139BE13CD7A480081A375 = {
+			isa = PBXGroup;
+			children = (
+				AAF139D213CD7A490081A375 /* XcodeIMFix */,
+				AAF139CB13CD7A490081A375 /* Frameworks */,
+				AAF139CA13CD7A490081A375 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AAF139CA13CD7A490081A375 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AAF139C913CD7A490081A375 /* XcodeIMFix.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AAF139CB13CD7A490081A375 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AAF139CC13CD7A490081A375 /* Cocoa.framework */,
+				AAF139CE13CD7A490081A375 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AAF139CE13CD7A490081A375 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AAF139CF13CD7A490081A375 /* AppKit.framework */,
+				AAF139D013CD7A490081A375 /* CoreData.framework */,
+				AAF139D113CD7A490081A375 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		AAF139D213CD7A490081A375 /* XcodeIMFix */ = {
+			isa = PBXGroup;
+			children = (
+				AAF139D313CD7A490081A375 /* Supporting Files */,
+			);
+			path = XcodeIMFix;
+			sourceTree = "<group>";
+		};
+		AAF139D313CD7A490081A375 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AAF139D413CD7A490081A375 /* XcodeIMFix-Info.plist */,
+				AAF139D513CD7A490081A375 /* InfoPlist.strings */,
+				AAF139D813CD7A490081A375 /* XcodeIMFix-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAF139C813CD7A490081A375 /* XcodeIMFix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AAF139DB13CD7A490081A375 /* Build configuration list for PBXNativeTarget "XcodeIMFix" */;
+			buildPhases = (
+				AAF139C513CD7A490081A375 /* Sources */,
+				AAF139C613CD7A490081A375 /* Frameworks */,
+				AAF139C713CD7A490081A375 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XcodeIMFix;
+			productName = XcodeIMFix;
+			productReference = AAF139C913CD7A490081A375 /* XcodeIMFix.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AAF139C013CD7A480081A375 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = AAF139C313CD7A480081A375 /* Build configuration list for PBXProject "XcodeIMFix" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AAF139BE13CD7A480081A375;
+			productRefGroup = AAF139CA13CD7A490081A375 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AAF139C813CD7A490081A375 /* XcodeIMFix */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AAF139C713CD7A490081A375 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AAF139D713CD7A490081A375 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AAF139C513CD7A490081A375 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AAF139D513CD7A490081A375 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AAF139D613CD7A490081A375 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AAF139D913CD7A490081A375 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AAF139DA13CD7A490081A375 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AAF139DC13CD7A490081A375 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XcodeIMFix/XcodeIMFix-Prefix.pch";
+				INFOPLIST_FILE = "XcodeIMFix/XcodeIMFix-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		AAF139DD13CD7A490081A375 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XcodeIMFix/XcodeIMFix-Prefix.pch";
+				INFOPLIST_FILE = "XcodeIMFix/XcodeIMFix-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AAF139C313CD7A480081A375 /* Build configuration list for PBXProject "XcodeIMFix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAF139D913CD7A490081A375 /* Debug */,
+				AAF139DA13CD7A490081A375 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AAF139DB13CD7A490081A375 /* Build configuration list for PBXNativeTarget "XcodeIMFix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AAF139DC13CD7A490081A375 /* Debug */,
+				AAF139DD13CD7A490081A375 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AAF139C013CD7A480081A375 /* Project object */;
+}
